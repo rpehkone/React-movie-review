@@ -1,7 +1,19 @@
 import React from 'react'
 
 export class MovieThumbnail extends React.Component {
-	 click = () => {
+	 OpenMovie = () => {
+			var name = this.props.name
+			console.log('inside MovieThumbnail ' + name);
+	 }
+	 MovieSetAsSeen = () => {
+			var name = this.props.name
+			console.log('inside MovieThumbnail ' + name);
+	 }
+	 LikeMovie = () => {
+			var name = this.props.name
+			console.log('inside MovieThumbnail ' + name);
+	 }
+	 MovieDropDown = () => {
 			var name = this.props.name
 			console.log('inside MovieThumbnail ' + name);
 	 }
@@ -9,8 +21,10 @@ export class MovieThumbnail extends React.Component {
 		var name = this.props.name
 		return (
 			<div>
-				<button type='button' onClick={this.click}>{name}</button>
-				{/* <h1> asd </h1> */}
+				<button className='movie-thumbnail' type='button' onClick={this.OpenMovie}>{name}</button>
+				<button type='button' onClick={this.MovieSetAsSeen}>e</button>
+				<button type='button' onClick={this.LikeMovie}>&lt;3</button>
+				<button type='button' onClick={this.MovieDropDown}>...</button>
 			</div>
 		);
 	}
