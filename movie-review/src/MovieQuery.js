@@ -4,7 +4,7 @@ import {MovieThumbnail} from './MovieThumbnail.js';
 export class MovieQuery extends React.Component {
 	movies = ["harry potter", "home alone", "blade runner", "coco", "spider-man"];
 	movie_container = this.movies.map((value, index) => {
-		return <MovieThumbnail key={value} name={value} />
+		return <MovieThumbnail SetPage={this.props.SetPage} key={value} name={value} />
 	});
 	SetDecade(decade) {
 		this.decade = decade;

@@ -4,6 +4,7 @@ export class MovieThumbnail extends React.Component {
 	 OpenMovie = () => {
 			var name = this.props.name
 			console.log('inside MovieThumbnail ' + name);
+			this.props.SetPage(2);
 	 }
 	 MovieSetAsSeen = () => {
 			var name = this.props.name
