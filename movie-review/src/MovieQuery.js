@@ -2,7 +2,8 @@ import React from 'react'
 import {MovieThumbnail} from './MovieThumbnail.js';
 
 export class MovieQuery extends React.Component {
-	movies = ["harry potter", "home alone", "blade runner", "coco", "spider-man"];
+	movies = ["harry potter", "home alone", "blade runner", "coco", "spider-man", "harry potter", "home alone", "blade runner", "coco", "spider-man"];
+	//12 * 6
 	movie_container = this.movies.map((value, index) => {
 		return <MovieThumbnail SetPage={this.props.SetPage} key={value} name={value} />
 	});
@@ -30,4 +31,4 @@ export class MovieQuery extends React.Component {
 		</div>
 		);
 	}
-}  
+}

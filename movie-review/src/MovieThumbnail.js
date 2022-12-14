@@ -25,7 +25,7 @@ export class MovieThumbnail extends React.Component {
 		var name = this.props.name
 		return (
 			<div>
-				<img type="image" className='movie-thumbnail' src={require('./home.png')} alt={name} onClick={this.OpenMovie}></img>
+				<img type="image" className='movie-thumbnail' src={require('./test_img/home.png')} alt={name} onClick={this.OpenMovie}></img>
 				<button type='button' onClick={this.MovieSetAsSeen}>e</button>
 				<button style={thumbnailStyle} type='button' onClick={this.LikeMovie}>&lt;3</button>
 				<button type='button' onClick={this.MovieDropDown}>...</button>

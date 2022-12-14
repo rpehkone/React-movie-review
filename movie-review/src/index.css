@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #b0b0b0;
+  background-color: #202020;
 }
 
 code {
@@ -20,3 +22,13 @@ code {
   padding: 10px;
 }
 
+button, select {
+  border: none;
+  border-radius: 2px;
+  padding: 12px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #bd2f25;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+}
