@@ -12,7 +12,8 @@ export class MovieQuery extends React.Component {
 	}
 	render() {
 		return (
-			<div className='movie-thumbnail-container'>
+		<div>
+			<div>
 				<h5>Movies</h5>
 				<select key={0} name="decade" id="decade-selector" onChange={(decade) => this.SetDecade(decade.value)} >
 					<option key={0} decade={2020}>2020s</option>
@@ -22,8 +23,11 @@ export class MovieQuery extends React.Component {
 					<option key={4} decade={1980}>1980s</option>
 					<option key={5} decade={1970}>1970s</option>
 				</select>
+			</div>
+			<div className='movie-thumbnail-container'>
 				{this.movie_container}
 			</div>
+		</div>
 		);
 	}
 }  

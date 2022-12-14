@@ -18,12 +18,15 @@ export class MovieThumbnail extends React.Component {
 			console.log('inside MovieThumbnail ' + name);
 	 }
 	 render() {
+		const thumbnailStyle = {
+			color: "red",
+		}
 		var name = this.props.name
 		return (
 			<div>
-				<button className='movie-thumbnail' type='button' onClick={this.OpenMovie}>{name}</button>
+				<img type="image" className='movie-thumbnail' src={require('./home.png')} alt={name} onClick={this.OpenMovie}></img>
 				<button type='button' onClick={this.MovieSetAsSeen}>e</button>
-				<button type='button' onClick={this.LikeMovie}>&lt;3</button>
+				<button style={thumbnailStyle} type='button' onClick={this.LikeMovie}>&lt;3</button>
 				<button type='button' onClick={this.MovieDropDown}>...</button>
 			</div>
 		);
